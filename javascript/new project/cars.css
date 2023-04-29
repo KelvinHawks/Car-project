@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav{
+    background: #ddd;
+}
+.nav-bar-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 50px;
+}
+.nav-bavbar img{
+    border-radius: 50%;
+}
+.nav-bavbar ul{
+    display: flex;
+    gap: 5rem;
+}
+.nav-bavbar ul li{
+    list-style: none;
+   
+}
+.nav-bavbar ul li a{
+    text-decoration: none;
+    color: #414141;
+    font-size: 20px;
+}
+.links{
+    margin-right: 200px;
+}
+
+/* swiper section css */
+
+.container{
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #575757;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #5c5c5c;
+}
+
+/* buttons */
+header h1{
+    color: rgb(34, 34, 36);
+    font-size: 28px;
+}
+.buttons{
+    display: flex;
+    gap: 4rem;
+    margin-top: 50px;
+    justify-content: center;
+}
+.buttons button{
+    padding: 3px 8px;
+    width: 120px;
+    font-size: 18px;
+    background: none;
+    border-radius: 3px;
+    border: 2px solid rgb(109, 109, 247);
+    color: rgb(109, 109, 247);
+}
+
+@media only screen and (max-width : 700px){
+    .links{
+        margin-right: 0;
+    }
+    .nav-bavbar ul{
+        gap: 2rem;
+    }
+    .nav-bar-container{
+        padding: 5px 25px;
+    }
+}
